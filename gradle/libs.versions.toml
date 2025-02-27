@@ -6,9 +6,9 @@ spock = "2.3-groovy-4.0"
 lombok-plugin = { module = "io.freefair.lombok:io.freefair.lombok.gradle.plugin", version = "8.12.2" }
 spock-core = { module = "org.spockframework:spock-core", version.ref = "spock" }
 spock-spring = { module = "org.spockframework:spock-spring", version.ref = "spock" }
+springdoc = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version = "2.8.5" }
 
 [plugins]
 springBoot = { id = "org.springframework.boot", version = "3.4.3" }
 
 [bundles]
-

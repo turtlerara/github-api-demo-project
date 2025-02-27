@@ -1,0 +1,6 @@
+server.port: 8080
+logging.level.root: INFO
+
+spring:
+  application.name: demo-app
+  profiles.default: local

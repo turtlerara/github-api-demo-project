@@ -1,0 +1,7 @@
+management:
+  endpoint.health.show-details: never
+  health.defaults.enabled: false
+
+springdoc:
+  api-docs.enabled: false
+  swagger-ui.enabled: false
