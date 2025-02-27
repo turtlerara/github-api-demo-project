@@ -1,0 +1,14 @@
+[versions]
+gradlew = "8.13"
+spock = "2.3-groovy-4.0"
+
+[libraries]
+lombok-plugin = { module = "io.freefair.lombok:io.freefair.lombok.gradle.plugin", version = "8.12.2" }
+spock-core = { module = "org.spockframework:spock-core", version.ref = "spock" }
+spock-spring = { module = "org.spockframework:spock-spring", version.ref = "spock" }
+
+[plugins]
+springBoot = { id = "org.springframework.boot", version = "3.4.3" }
+
+[bundles]
+
