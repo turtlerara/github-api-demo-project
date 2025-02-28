@@ -1,6 +1,7 @@
 [versions]
 gradlew = "8.13"
 spock = "2.3-groovy-4.0"
+mapstruct = "1.6.3"
 
 [libraries]
 lombok-plugin = { module = "io.freefair.lombok:io.freefair.lombok.gradle.plugin", version = "8.12.2" }
@@ -9,6 +10,9 @@ spock-spring = { module = "org.spockframework:spock-spring", version.ref = "spoc
 objenesis = { module = "org.objenesis:objenesis", version = "3.4" }
 springdoc = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version = "2.8.5" }
 jspecify = { module = "org.jspecify:jspecify", version = "1.0.0" }
+commons-text = { module = "org.apache.commons:commons-text", version = "1.13.0" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
 
 [plugins]
 springBoot = { id = "org.springframework.boot", version = "3.4.3" }

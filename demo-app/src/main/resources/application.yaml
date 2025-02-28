@@ -1,6 +1,10 @@
 server.port: 8080
+server.error.include-stacktrace: never
+
 logging.level.root: INFO
 
 spring:
   application.name: demo-app
   profiles.default: local
+
+caching.github-user-data.cache-evict-cron: 0 0 0 * * *
