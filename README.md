@@ -116,3 +116,15 @@ Below is an example of initializing the client factory using default settings an
 ```
 return new GitHubApiClientFactoryImpl().userClient();
 ```
+
+#### Client Configuration Options
+
+A custom instance of `com.demo.client.github.config.GitHubApiClientConfig` can be provided to the
+`GitHubApiClientFactory` to supply values for one or more of the below settings.
+
+- apiVersion
+    - Specifies the GitHub REST API version to be used for all requests.
+    - Default: `LATEST`
+- userAgent
+    - The User-Agent header value to use for all GitHub REST API requests.
+    - Default: `GitHub-Api-Client-App`
