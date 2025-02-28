@@ -4,6 +4,7 @@ import com.demo.client.github.GitHubUserClient
 import com.demo.client.github.config.GitHubApiClientConfig
 import spock.lang.Specification
 
+@SuppressWarnings('GroovyAccessibility')
 class GitHubApiClientFactoryImplSpec extends Specification {
 
   GitHubApiClientFactoryImpl clientFactory
@@ -12,6 +13,11 @@ class GitHubApiClientFactoryImplSpec extends Specification {
 
   def setup() {
     clientFactory = new GitHubApiClientFactoryImpl(clientConfig)
+  }
+
+  def 'construct factory with default settings'() {
+    expect:
+    new GitHubApiClientFactoryImpl().restClient != null
   }
 
   def 'build github user client'() {

@@ -12,6 +12,11 @@ public class GitHubApiClientFactoryImpl implements GitHubApiClientFactory {
 
   private final RestClient restClient;
 
+  /** Constructs a {@link GitHubApiClientFactoryImpl} instance using default settings. */
+  public GitHubApiClientFactoryImpl() {
+    this(GitHubApiClientConfig.builder().build());
+  }
+
   /**
    * Constructs a {@link GitHubApiClientFactoryImpl} instance using the provided client
    * configuration.
