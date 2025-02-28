@@ -1,6 +1,14 @@
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
 plugins {
     base
     `jacoco-report-aggregation`
+    alias(libs.plugins.springBoot) apply false
+}
+
+dependencies {
+    jacocoAggregation(platform(SpringBootPlugin.BOM_COORDINATES))
+    jacocoAggregation(project(":github-api-client-spring6"))
 }
 
 reporting {

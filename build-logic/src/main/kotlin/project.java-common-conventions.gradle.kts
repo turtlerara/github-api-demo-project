@@ -16,7 +16,17 @@ repositories {
 }
 
 tasks {
+    jacocoTestReport {
+        dependsOn(test)
+        reports {
+            html.required = true
+            xml.required = false
+            csv.required = false
+        }
+    }
+
     test {
+        finalizedBy(jacocoTestReport)
         useJUnitPlatform()
     }
 }
